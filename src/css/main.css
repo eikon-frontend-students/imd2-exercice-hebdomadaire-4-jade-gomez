@@ -12,3 +12,53 @@ img,
 video {
   display: block;
 }
+body {
+  font-family: "Roboto";
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+}
+.stat {
+  display: flex;
+}
+p {
+  font-size: 16px;
+  margin-right: 20px;
+  text-align: right;
+  width: 100px;
+}
+
+.mobile,
+.desktop {
+  font-size: 12px;
+  color: white;
+}
+
+.mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffcc2f;
+}
+.desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 10px 10px 0px;
+  background: #37d3d2;
+}
+.bar {
+  display: flex;
+  gap: 2px;
+}
+.mob-sui {
+  display: flex;
+  width: 195px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
