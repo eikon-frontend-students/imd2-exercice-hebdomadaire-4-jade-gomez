@@ -14,28 +14,38 @@ video {
 }
 body {
   font-family: "Roboto";
+  width: 1728px;
+  height: 1117px;
+  padding: 50px 1306px 901px 0px;
 }
 
 .chart {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
-  margin-top: 50px;
 }
-.stat {
+
+.switzerland {
   display: flex;
-}
-p {
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
   font-size: 16px;
-  margin-right: 20px;
   text-align: right;
+}
+
+p {
   width: 100px;
 }
 
-.mobile,
-.desktop {
-  font-size: 12px;
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
   color: white;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .mobile {
@@ -43,22 +53,85 @@ p {
   justify-content: center;
   align-items: center;
   background: #ffcc2f;
+  height: 30px;
 }
+
 .desktop {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0px 10px 10px 0px;
   background: #37d3d2;
-}
-.bar {
-  display: flex;
-  gap: 2px;
-}
-.mob-sui {
-  display: flex;
-  width: 195px;
   height: 30px;
+}
+
+.switzerland .mobile {
+  width: 195px;
+}
+
+.switzerland .desktop {
+  width: 105px;
+}
+
+.USA {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  text-align: right;
+}
+.USA .mobile {
+  width: 153px;
+}
+.USA .desktop {
+  width: 147px;
+}
+
+.Europe {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  text-align: right;
+}
+
+.Europe .mobile {
+  width: 123px;
+}
+.Europe .desktop {
+  width: 177px;
+}
+
+.legend {
+  display: flex;
+  width: 422px;
+  padding: 20px 0px 20px 120px;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+
+.l-mobile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rect {
+  width: 16px;
+  height: 16px;
+}
+
+.l-mobile .rect {
+  background: #ffcc2f;
+}
+
+.l-desktop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.l-desktop .rect {
+  background: #37d3d2;
 }
